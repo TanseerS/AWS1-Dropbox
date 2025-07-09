@@ -6,3 +6,7 @@ The system allows users to securely upload files and retrieve them later, with c
 - Metadata Tracking with DynamoDB
 - Notification via SNS
 - CDN Delivery (CloudFront)
+
+<img src= "./assets/serverless-dropbox-architecture.png">
+
+***
