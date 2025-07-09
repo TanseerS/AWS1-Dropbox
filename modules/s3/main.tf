@@ -24,3 +24,14 @@ resource "aws_s3_bucket_versioning" "dropbox-versioning" {
     status = "Enabled"
   }
 }
+
+# Bucket encryption Configuration
+resource "aws_s3_bucket_server_side_encryption_configuration" "dropbox-encryption" {
+  bucket = aws_s3_bucket.dropbox-bucket.id
+
+  rule {
+    apply_server_side_encryption_by_default {
+      sse_algorithm = "AES256"
+    }
+  }
+}
