@@ -1,2 +1,2 @@
 # S3 bucket variable definition
-bucket-name = "dropbox-bucket"
+bucket-name = "dropbox1-bucket"
