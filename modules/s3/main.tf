@@ -1,8 +1,8 @@
 # S3 Bucket Configuration
 resource "aws_s3_bucket" "dropbox-bucket" {
-  bucket = var.bucket-name
+  bucket = var.bucket_name
   tags = {
-    Name        = var.bucket-name
+    Name        = var.bucket_name
     Environment = "Production"
   }
 }
